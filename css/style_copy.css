@@ -1,0 +1,30 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	}
+	
+li {
+	float: left;
+	}
+	
+li a {
+	display: block;
+	color: pink;
+	text-align: center;
+	padding: 15px 17px;
+	text-decoration: none;
+	}
+
+summary {
+
+	font-family: 'courier';
+	color: white;
+}	
+
+a {
+
+	color: red;
+}
