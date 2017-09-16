@@ -1,0 +1,200 @@
+<!DOCTYPE >
+
+<html>
+
+<head>
+	<title>Welcome to your dream PC building Page. In a JavaScript environment!</title>
+	
+	<script type = "text/javascript">
+	<!--document.writeIn("<h1>Welcome to JavaScript Programming!</h1>");  //-->
+	</script>
+</head>
+
+<body>
+	
+<div id="container">
+	<div class="panel">
+		<h2>Welcome to your dream PC build program page. <br> Using JavaScript Programming!</h2>
+		<h3>In this page, you can search for parts that you need to build the dream PC you desire!</h3>
+<button>NEW PC BUILD</button>
+</div>
+
+<html>
+<html>
+<head>
+	<script language=JavaScript>
+		var CompItems = new Array();
+		CompItems[100] = 129;
+		CompItems[101] = 109;
+		CompItems[102] = 149;
+
+		CompItems[200] = 50;
+		CompItems[201] = 25;
+		CompItems[202] = 100;
+
+		CompItems[300] = 50;
+		CompItems[301] = 75;
+		CompItems[302] = 100;
+
+		CompItems[400] = 10;
+		CompItems[401] = 15;
+		CompItems[402] = 25;
+
+		CompItems[500] = 75;
+		CompItems[501] = 85;
+		CompItems[502] = 125;
+
+		CompItems[600] = 80;
+
+
+
+		function updateOrderDetails(){
+			const TAX = 0.115;
+			var total = 0;
+			var totalTaxIncluded;
+			var orderDetails = "";
+			var formElement;
+			formElement = document.form1.cboProcessor[document.form1.cboProcessor.selectedIndex];
+			totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+			total = parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			orderDetails = "Processor: " + formElement.text;
+			orderDetails = orderDetails + " $" + CompItems[formElement.value] + "\n";
+
+			formElement = document.form1.cboHardDrive[document.form1.cboHardDrive.selectedIndex];
+			totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+			total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			orderDetails = orderDetails + "Hard Drive : $" + CompItems[formElement.value] + "\n";
+
+			formElement = document.form1.chkCDROM
+			if (formElement.checked == true) {
+
+				orderDetails = orderDetails + "CD-ROM : $" + CompItems[formElement.value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+				total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			}
+
+			formElement = document.form1.chkDVD
+			if (formElement.checked == true) {
+
+				orderDetails = orderDetails + "DVD-ROM : $" + CompItems[formElement.value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+				total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			}
+
+			formElement = document.form1.chkScanner
+			if (formElement.checked == true) {
+
+				orderDetails = orderDetails + "Scanner : $" + CompItems[formElement.value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+				total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			}
+
+			formElement = document.form1.radCase
+			if (formElement[0].checked == true) {
+
+				orderDetails = orderDetails + "Desktop Case : $" + CompItems[formElement[0].value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement[0].value]) * TAX;
+				total = total + parseFloat(CompItems[formElement[0].value]) + totalTaxIncluded;
+			}else if (formElement[1].checked == true) {
+
+				orderDetails = orderDetails + "Mini Tower : $" + CompItems[formElement[1].value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement[1].value]) * TAX;
+				total = total + parseFloat(CompItems[formElement[1].value]) + totalTaxIncluded;
+			}else if (formElement[2].checked == true) {
+
+				orderDetails = orderDetails + "Full Tower : $" + CompItems[formElement[2].value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement[2].value]) * TAX;
+				total = total + parseFloat(CompItems[formElement[2].value]) + totalTaxIncluded;
+			}
+
+			formElement = document.form1.cboRAM[document.form1.cboRAM.selectedIndex];
+			totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+			total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			orderDetails = orderDetails + "RAM : $" + CompItems[formElement.value] + "\n";
+
+			formElement = document.form1.chkWindowsOS
+			if (formElement.checked == true) {
+
+				orderDetails = orderDetails + "Windows OS : $" + CompItems[formElement.value] + "\n";
+				totalTaxIncluded = parseFloat(CompItems[formElement.value]) * TAX;
+				total = total + parseFloat(CompItems[formElement.value]) + totalTaxIncluded;
+			}
+			
+			orderDetails = orderDetails + "\n\nTotal Order Cost is $" + total;
+			document.form1.txtOrder.value = orderDetails;
+
+		}
+	</script>
+</head>
+
+<body>
+	<form name=form1>
+	<table>
+		<tr>
+			<td width = 300>
+				Processor
+				<br>
+				<select name=cboProcessor>
+					<option value=100>Intel Core Series i3 Processor with 2.9 GHz base and 3.2 GHz Turbo Boost</option>
+					<option value=101>AMD Ryzen Series Ryzen 3 Processor with 3.1 GHz base and 3.4 GHz Turbo Boost</option>
+					<option value=102>AMD FX Series A10 Processor with 3.0 GHz base and 3.3 GHz Turbo Boost</option>
+				</select>
+				<br><br>
+				Hard Drive
+				<br>
+				<select name=cboHardDrive>
+					<option value=200>WD Blue 1TB Hard Drive</option>
+					<option value=201>SanDisk 500GB Hard Drive</option>
+					<option value=202>Crucial 2TB Hard Drive</option>
+				</select>
+				<br><br>
+				CD-ROM
+				<input type="checkbox" name="chkCDROM" value="300">
+				<br>
+				DVD-ROM
+				<input type="checkbox" name="chkDVD" value="301">
+				<br>
+				Scanner
+				<input type="checkbox" name="chkScanner" value="302">
+				<br><br>
+				Desktop Case
+				<input type="radio" name="radCase" value="400">
+				<br>
+				Mini Tower
+				<input type="radio" name="radCase" value="401">
+				<br>
+				Full Tower
+				<input type="radio" name="radCase" value="402">
+				<br><br>
+				RAM
+				<select name="cboRAM">
+					<option value="500">2x4GB Kit Ballistic Sport RAM 2800MHz</option>
+					<option value="501">2x4GB Kit Crucial RAM 2700MHz</option>
+					<option value="502">2x8GB Kit Vengeance RGB RAM 3000 MHz</option>
+				</select>
+				<br><br>
+				OS
+				<input type="radio" name="chkWindowsOS" value="600">
+				<br>
+				<p>
+				<input type="button" value="Checkout" name="butUpdate" onclick="updateOrderDetails()">
+				</p>
+			</td>
+			<td>
+				<textarea rows="20" cols="35" id="txtOrder" name="txtOrder"></textarea>
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+</body>
+
+</html>
+
+
+
+
+
+</body> 
+</html>
