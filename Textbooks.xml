@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textbooks>
+	<textbook>
+		<title>Data Abstraction and Problem Solving</title>
+		<authors>
+			<author>
+				<firstName>Frank M.</firstName>
+				<lastName>Carrano</lastName>
+			</author>
+			<author>
+				<firstName>Timothy</firstName>
+				<lastName>Henry</lastName>
+			</author>
+		</authors>
+		<publisher>
+			<name>Pearson Education</name>
+			<website>www.pearson.com</website>
+		</publisher>
+		<Year-of-Publication>2012</Year-of-Publication>
+		<ISBN>0132923726</ISBN>
+		<book-specific-website>https://www.scribd.com/document/266074593/Data-Abstraction-Problem-Solving-with-C-Walls-and-Mirrors-6th-Edition</book-specific-website>
+		<edition>6</edition>
+		<cover-type>Paperback</cover-type>
+	</textbook>
+	<textbook>
+		<title>Starting Out With C++ From Control Structures Through Objects</title>
+		<authors>
+			<author>
+				<firstName>Tony</firstName>
+				<lastName>Gaddis</lastName>
+			</author>
+		</authors>
+		<publisher>
+			<name>Pearson Education</name>
+			<website>www.pearson.com</website>
+		</publisher>
+		<Year-of-Publication>2013</Year-of-Publication>
+		<ISBN>9780133769395</ISBN>
+		<book-specific-website>http://wps.pearsoned.com/ecs_gaddis_sowcpp_cs_8/</book-specific-website>
+		<edition>8</edition>
+		<cover-type>Hardcover</cover-type>
+	</textbook>
+</textbooks>
+
+
